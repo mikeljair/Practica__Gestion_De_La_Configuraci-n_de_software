@@ -1,3 +1,110 @@
+<style>
+  /* Paleta de grises para el formulario */
+  body {
+    background-color: #2e2e2e; /* Gris oscuro para fondo general */
+    color: #d1d1d1; /* Texto gris claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container-xxl {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #3c3c3c; /* Gris medio */
+    border: 1px solid #555; /* Borde gris oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  .app-brand-logo img.logo {
+    max-width: 120px;
+    filter: grayscale(100%) brightness(80%);
+    margin-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  label.form-label {
+    color: #bbb;
+    font-weight: 600;
+  }
+
+  input.form-control {
+    background-color: #4a4a4a;
+    border: 1px solid #666;
+    color: #eee;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+  }
+
+  input.form-control::placeholder {
+    color: #ffffffff;
+  }
+
+  input.form-control:focus {
+    background-color: #555;
+    border-color: #888;
+    outline: none;
+    color: #ffffffff;
+  }
+
+  .form-password-toggle .input-group-text {
+    background-color: #4a4a4a;
+    border: 1px solid #666;
+    color: #bbb;
+    cursor: pointer;
+  }
+
+  .form-password-toggle .input-group-text:hover {
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+
+  a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  a:hover {
+    color: #ccc;
+    text-decoration: underline;
+  }
+
+  button.btn-primary {
+    background-color: #666;
+    border-color: #666;
+    color: #eee;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+
+  button.btn-primary:hover {
+    background-color: #888;
+    border-color: #888;
+    color: #fff;
+  }
+
+  p.text-center a span {
+    color: #bbb;
+  }
+
+  p.text-center a span:hover {
+    color: #ddd;
+  }
+</style>
+
 <div class="container-xxl">
   <div class="authentication-wrapper authentication-basic container-p-y">
     <div class="authentication-inner">

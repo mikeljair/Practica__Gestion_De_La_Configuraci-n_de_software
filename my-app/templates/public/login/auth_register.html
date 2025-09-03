@@ -4,17 +4,18 @@
 <!---->
 {% block body %}
 
-<div class="container-xxl">
+<div class="container-xxl" style="background-color: #2e2e2e; min-height: 100vh; padding-top: 4rem; padding-bottom: 4rem;">
   <div class="authentication-wrapper authentication-basic container-p-y">
     <div class="authentication-inner">
-      <div class="card">
+      <div class="card" style="background-color: #3c3c3c; border-color: #555; border: 1px solid #555;">
         <div class="card-body">
-          <div class="app-brand justify-content-center">
+          <div class="app-brand justify-content-center mb-4">
             <span class="app-brand-logo">
               <img
                 class="logo"
                 src="{{ url_for('static', filename ='assets/img/logo.png') }}"
-                alt="Logo" />
+                alt="Logo"
+                style="filter: grayscale(100%) brightness(80%);" />
             </span>
           </div>
 
@@ -23,7 +24,7 @@
             action="{{ url_for('cpanelResgisterUserBD') }}"
             method="POST">
             <div class="mb-3">
-              <label for="name_surname" class="form-label">
+              <label for="name_surname" class="form-label text-secondary">
                 Nombre y apellido
               </label>
               <input
@@ -31,18 +32,20 @@
                 class="form-control"
                 name="name_surname"
                 required
-                autofocus />
+                autofocus
+                style="background-color: #f8f9fa; border-color: #ced4da; color: #495057;" />
             </div>
             <div class="mb-3">
-              <label for="email_user" class="form-label">Email</label>
+              <label for="email_user" class="form-label text-secondary">Email</label>
               <input
                 type="email"
                 class="form-control"
                 name="email_user"
-                required />
+                required
+                style="background-color: #f8f9fa; border-color: #ced4da; color: #495057;" />
             </div>
             <div class="mb-3 form-password-toggle">
-              <label class="form-label" for="pass_user">Clave</label>
+              <label class="form-label text-secondary" for="pass_user">Clave</label>
               <div class="input-group input-group-merge">
                 <input
                   type="password"
@@ -51,13 +54,14 @@
                   id="pass_user"
                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                   aria-describedby="password"
-                  required />
-                <span class="input-group-text cursor-pointer">
+                  required
+                  style="background-color: #f8f9fa; border-color: #ced4da; color: #495057;" />
+                <span class="input-group-text cursor-pointer" style="background-color: #f8f9fa; border-color: #ced4da; color: #6c757d;">
                   <i class="bx bx-hide"></i>
                 </span>
               </div>
             </div>
-            <button class="btn btn-primary w-100">
+            <button class="btn btn-secondary w-100">
               Crear cuenta
               <i class="bi bi-arrow-right-circle"></i>
             </button>
@@ -66,8 +70,8 @@
           <div class="text-center">
             <a
               href="{{ url_for('inicio') }}"
-              class="d-flex align-items-center justify-content-center">
-              <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm"></i>
+              class="d-flex align-items-center justify-content-center text-secondary text-decoration-none">
+              <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm me-1"></i>
               volver
             </a>
           </div>
